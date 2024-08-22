@@ -1,0 +1,152 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <div class="container">
+      <h1 id="title">Wellness Center Survey Form</h1>
+      <p id="description">Please fill out the the survey form below.</p>
+      <form id="survey-form">
+        <label id="name-label" for="name">Name:</label>
+        <input type="name" id="name" placeholder="Enter your name" required>
+
+          <label id="email-label" for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+          <label id="number-label" for="number">Age:</label>
+          <input type="number" id="number" name="age" min="3" max="120" placeholder="Enter your age" required>
+
+          <label for="dropdown">How would you rate your mental health?</label>
+
+          <select id="dropdown" name="mental-health-rating" required>
+            <option value="">Select...</option>
+         <option value="excellent">Excellent</option>
+          <option value="good">Good</option>
+           <option value="fair">Fair</option>
+            <option value="poor">Poor</option>
+            </select>
+
+            <fieldset>
+              <legend>Do you have any mental health conditions?</legend>
+              <input type="radio" id="yes" name="mental-health-condition" value="yes" required>
+
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="mental-health-condition" value="no">
+              <label for="no">No</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Have you ever sought help for your mental health?</legend>
+            <input type="radio" id="yes-help" name="sought-help" value="yes" required>
+            <label for="yes-help">Yes</label>
+            <input type="radio" id="no-help" name="sought-help" value="no" required>
+            <label for="no-help">No</label>
+            </fieldset>
+          <fieldset>
+            <legend>Which of the following condition do you experience? (Select all that apply)</legend>
+            <input type="checkbox" id="bipolar" name="symptoms" value="bipolar">
+            <label for="bipolar">Bipolar</label>
+            <input type="checkbox" id="post traumatic stress disorder" name="symptoms" value="post traumatic stress disorder">
+            <label for="post traumatic stress disorder">Post traumatic stress disorder</label>
+            <input type="checkbox" id="anxiety" name="symptoms" value="anxiety">
+            <label for="anxiety">Anxiety</label>  
+            <input type="checkbox" id="substance abuse disorders" name="symptoms" value="substance abuse disorders">
+            <label for="substance abuse disorders">Substance abuse disorders</label> 
+            <input type="checkbox" id="eating disorders" name="symptoms" value="eating disorders">
+            <label for="eating disorders">Eating disorders</label> 
+            <input type="checkbox" id="none" name="symptoms" value="none">
+            <label for="none">None</label>
+        </fieldset>
+          
+          <label for="feedback">Feedback:</label>
+          <textarea id="feedback" name="feedback" rows="4" placeholder="We would greatly appreciate your feedback..."></textarea>
+          <button type="submit" id="submit">Submit</button>
+      </body>
+      </html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+ body {
+   font-family:Arial, sans-serif;
+   background-color: #e9ec;
+   display:block;
+   margin:0 auto;
+   padding:18px;
+ }
+  
+  .container {
+    max-width:500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  h1 {
+    text-align:center;
+    color: #333;
+  }
+
+  p {
+    text-align: center;
+    color: #555;
+  }
+  label {
+    display: block;
+    margin-top: 14px;
+    color:#555;
+  }
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+
+textarea {
+width:100%;
+padding:8px;
+margin-top: 4px;
+border: 1px solid #ccc;
+border-radius: 3px;
+}
+
+input[type="radio"],
+input type["checkbox"] {
+  margin:6px 0;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding:12px;
+  margin-top: 10px;
+}
+
+legend {
+  font-weight: bolder;
+}
+
+button {
+  margin-top: 18px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80%
+}
+button:hover {
+  background: #0056b3
+}
+
+** end of undefined **
+
